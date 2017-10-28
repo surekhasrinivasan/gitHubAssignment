@@ -1,0 +1,161 @@
+   1  git config --global user.name "surekha"
+    2  git config --global user.email "surekhasrao@gmail.com"
+    3  mkdir hello
+    4  cd hello
+    5  touch hello.rb
+    6  c9 hello.rb 
+    7  git init
+    8  git add hello.rb 
+    9  git commit -m "First Commit"
+   10  git status
+   11  puts "Hello, #{ARGV.first}!"
+   12  echo "puts "Hello, #{ARGV.first}!"" 
+   13  git status
+   14  c9 hello.rb
+   15  git status
+   16  git add hello.rb
+   17  git status
+   18  git commit
+   19  c9 hello.rb
+   20  cd ..
+   21  cd workspace
+   22  ..
+   23  cd workspace
+   24  git status
+   25  cd hello.rb
+   26  cd hello/
+   27  git commit
+   28  git status
+   29  git log --pretty=oneline
+   30  cd hello/
+   31  git status
+   32  git log --pretty=oneline
+   33  git log --pretty=oneline --max-count=2
+   34  git log --pretty=oneline --since='2 minutes ago'
+   35  git log --pretty=oneline --since='5  minutes ago'
+   36  git log --pretty=oneline --until='5  minutes ago'
+   37  git log --pretty=oneline --author='surekha'
+   38  git log --pretty=oneline --all
+   39  git log --all --pretty=format:'%h %cd %s(%an)' --since='7days ago'
+   40  grep -r .
+   41  cd HOME/
+   42  cd ..
+   43  cp [alias]
+   44  cd workspace
+   45  cd hello/
+   46  git hist
+   47  git checkout<hash>
+   48  git checkout <hash>
+   49  git checkout master
+   50  cat hello.rb
+   51  git tag 1
+   52  git tag v1
+   53  git checkout v1^
+   54  cat hello.rb
+   55  git tag v1-beta
+   56  git checkout v1
+   57  git checkout v1-beta
+   58  git tag
+   59  git hist master --all
+   60  git checkout master
+   61  git status
+   62  git checkout hello.rb
+   63  git status
+   64  cat hello.rb
+   65  git add hello.rb
+   66  git status
+   67  git reset HEAD hello.rb
+   68  git checkout hello.rb
+   69  git status
+   70  git add hello.rb
+   71  git commit -m "Oops, we didn't want this commit"
+   72  git revert HEAD
+   73  git hist
+   74  cd hello/
+   75  git hist
+   76  git tag oops
+   77  git reset --hard v1
+   78  git hist
+   79  git hist --all
+   80  git tag -d oops
+   81  git hist --all
+   82  git add hello.rb
+   83  git commit -m "Add an author comment"
+   84  git add hello.rb
+   85  git commit --amend -m "Add an author/email comment"
+   86  git hist
+   87  mkdir lib
+   88  git mv hello.rb lib
+   89  git status
+   90  git commit -m "Moved hello.rb to lib"
+   91  gem install rake
+   92  git add Rakefile
+   93  g
+   94  gem install rake
+   95  git add Rakefile
+   96  cd hello/
+   97  gem install rake
+   98  git add Rakefile
+   99  git commit -m "Added a Rakefile"
+  100  git status
+  101  rake
+  102  cd ..
+  103  ls -C .git
+  104  cd workspace
+  105  cd hello/
+  106  ls -C.git
+  107  ls -C .git
+  108  ls -C .git/Objects
+  109  ls -C .git/objects
+  110  ls -C .git/objects<dir>
+  111  ls -C .git/objects/<dir>
+  112  cd ..
+  113  ls -C .git
+  114  cd workspace
+  115  ls -C .git
+  116  ls -C .git/objects
+  117  ls -C .git/objects/<dir>
+  118  cd hello
+  119  ls -C .git/objects
+  120  ls -C .git/objects/<dir>
+  121  cat .git/config
+  122  ls .git/refs
+  123  ls .git/refs/heads
+  124  ls .git/refs/tags
+  125  ls .git/refs/tags/v1
+  126  cat .git/refs/tags/v1
+  127  cat .git/HEAD
+  128  git hist --max-count=1
+  129  git cat-file -t <hash>
+  130  git git-type -t <hash>
+  131  git git-dump -t <hash>
+  132  git git-type <hash>
+  133  git git-type
+  134  git type 972684d
+  135  git dump 972684d
+  136  git dump <treehash>
+  137  git dump fb807a0
+  138  git dump 999900d
+  139  git dump 4a6330f
+  140  git checkout -b greet
+  141  git status
+  142  git add lib/greeter.rb
+  143  git commit -m "Added greeter class"
+  144  git add lib/hello.rb
+  145  git commit -m "Hello uses Greeter"
+  146  git add Rakefile
+  147  git commit -m "Updated Rakefile"
+  148  git status 
+  149  git hist --all
+  150  git checkout master
+  151  cat lib/hello.rb
+  152  git checkout greet
+  153  cat lib/hello.rb
+  154  git checkout maste
+  155  git checkout master
+  156  git add README
+  157  git commit -m "Added README"
+  158  git hist --all
+  159  git checkout greet
+  160  git merge master
+  161  git hist --all
